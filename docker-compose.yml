@@ -1,0 +1,34 @@
+version: '3'
+services:
+  honeydb:
+    image: honeydb-agent:latest
+    volumes:
+    - configs:/etc/honeydb/
+    env_file:
+      - honeydb-agent.env
+    ports:
+      - "389:389"           # LDAP
+      - "10001:10001"       # Gas
+      - "7000:7000"         # Echo
+      - "1883:1883"         # MQQT
+      - "8:8"               # MOTD
+      - "2100:2100"         # FTP
+      - "2222:2222"         # SSH
+      - "2323:2323"         # Telnet
+      - "25:25"             # SMTP
+      - "8081:8081"         # HTTP
+      - "502:502"           # Modbus
+      - "2000:2000"         # iKettle
+      - "2048:2048"         # Random
+      - "3306:3306"         # MySQL
+      - "4096:4096"         # HashRandomCount
+      - "3389:3389"         # RDP
+      - "5900:5900"         # VNC
+      - "6379:6379"         # Redis
+      - "7001:7001"         # WebLogic
+      - "9200:9200"         # Elasticsearch
+      - "11211:11211"       # Memcached
+      - "20547:20547"       # ProConOs
+
+volumes:
+    configs:
