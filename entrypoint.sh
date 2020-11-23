@@ -42,7 +42,7 @@ main () {
     export HONEYDB_hpfeeds__port="${FEEDS_SERVER_PORT:-10000}"
     export HONEYDB_hpfeeds__ident="${uid}"
     export HONEYDB_hpfeeds__secret="${secret}"
-    export HONEYDB_hpfeeds__channel="${HPFEEDS_CHANNEL:-honeydb.events}"
+    export HONEYDB_hpfeeds__channel="${HPFEEDS_CHANNEL:-honeydb-agent.events}"
 
     export HONEYDB_honeydb__enabled="${HONEYDB_ENABLED:-No}"
     export HONEYDB_honeydb__api_id="${HONEYDB_APIID:-123}"
