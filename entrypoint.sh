@@ -29,7 +29,7 @@ main () {
 
     # Register this host with CHN if needed
     chn-register.py \
-        -p honeydb \
+        -p honeydb-agent \
         -d "${DEPLOY_KEY}" \
         -u "${CHN_SERVER}" -k \
         -o "${HONEYDB_JSON}" \
