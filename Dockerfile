@@ -1,13 +1,13 @@
-FROM ubuntu:18.04
+FROM debian:buster-slim
 
-LABEL maintainer "Team Stingar <team.stingar@duke.edu>"
-LABEL name "honeydb-agent"
-LABEL version "1.9.2"
-LABEL release "1"
-LABEL summary "Honeydb-agent container"
-LABEL description "Honeydb-agent configured to log to CHN"
-LABEL authoritative-source-url "https://github.com/CommunityHoneyNetwork/honeydb-agent"
-LABEL changelog-url "https://github.com/CommunityHoneyNetwork/honeydb-agent/commits/master"
+LABEL maintainer="Team Stingar <team-stingar@duke.edu>"
+LABEL name="honeydb-agent"
+LABEL version="1.9.2"
+LABEL release="1"
+LABEL summary="Honeydb-agent container"
+LABEL description="Honeydb-agent configured to log to CHN"
+LABEL authoritative-source-url="https://github.com/CommunityHoneyNetwork/honeydb-agent"
+LABEL changelog-url="https://github.com/CommunityHoneyNetwork/honeydb-agent/commits/master"
 
 ENV DEBIAN_FRONTEND "noninteractive"
 RUN apt-get update \
