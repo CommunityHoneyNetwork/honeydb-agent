@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM debian:stretch-slim
 
 LABEL maintainer="Team Stingar <team-stingar@duke.edu>"
 LABEL name="honeydb-agent"
