@@ -12,7 +12,7 @@ LABEL changelog-url "https://github.com/CommunityHoneyNetwork/honeydb-agent/comm
 ENV DEBIAN_FRONTEND "noninteractive"
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y curl python3 python3-pip jq \
+    && apt-get install -y curl python3 python3-pip jq apt-transport-https\
     && apt-get autoremove -y \
     && apt-get clean
 
