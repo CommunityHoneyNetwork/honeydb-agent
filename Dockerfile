@@ -19,7 +19,7 @@ RUN apt-get update \
 RUN mkdir /code /log
 WORKDIR /code
 RUN curl -1sLf 'https://dl.cloudsmith.io/public/honeydb/honeydb-agent/cfg/setup/bash.deb.sh' | bash
-RUN apt-get update && apt-get install -y honeydb-agent=1.16.0
+RUN apt-get update && apt-get install -y honeydb-agent=1.17.0
 COPY requirements.txt /code/requirements.txt
 RUN python3 -m pip install -r /code/requirements.txt
 COPY agent.reference.conf /code/agent.reference.conf
