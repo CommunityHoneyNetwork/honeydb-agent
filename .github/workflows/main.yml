@@ -37,7 +37,7 @@ jobs:
         id: prepare
         run: |
           DOCKER_IMAGE=stingar/honeydb-agent
-          DOCKER_PLATFORMS=linux/amd64
+          DOCKER_PLATFORMS=linux/amd64,linux/armhf
           VERSION=${GITHUB_REF##*/}
 
           if [[ $GITHUB_REF == refs/tags/* ]]; then

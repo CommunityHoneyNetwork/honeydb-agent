@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM ubuntu:18.04
 
 LABEL maintainer="Team Stingar <team-stingar@duke.edu>"
 LABEL name="honeydb-agent"
